@@ -48,6 +48,6 @@ module.exports = (robot) ->
                   if today is true
                         res.send "First half (10am-3pm) will be handled by @#{first_half_person}, Second half (3pm-8pm) will be handled by @#{second_half_person}."
                   else
-                        res.send "Support Team is covering for everyone today. Cheers to them"
+                        res.send "Support Team is covering for everyone today. Cheers to them!!"
             else
                   res.send "Duh!"
