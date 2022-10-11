@@ -12,6 +12,3 @@ module.exports = (robot) ->
 
   robot.hear /review PR/i, (msg) ->
     msg.send "Yehi kaam firse ni yrrrr"
-
-  robot.hear /open source contribution/i, (msg) ->
-    msg.send "Hacktoberfest try kiya kya??"
