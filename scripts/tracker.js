@@ -10,7 +10,7 @@ const FIVE_MINUTES = "5 * 60 * 1000";
 const NO_DATA_MESSAGE = "No data so far. Please reset the alert count data or wait for any alert to trigger.";
 const WRONG_INPUT_OR_UNKNOWN_ERROR = "Wrong Input OR Unknown Error Occured";
 const NO_ALERT = "No Alerts were there";
-const CONTACT_AUTHORS = "contact @Anish Rajan or @Prateek Adlakha";
+const CONTACT_AUTHORS = "contact <!U0205LMHPS8> or <!U0405LVWOL7>";
 
 setExpiry = (robot, channel, time) => {
     robot.brain.data[channel].expiry = time;
