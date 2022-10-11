@@ -1,6 +1,6 @@
 // Supported Apps
 const INCOMING_WEBHOOK = "incoming-webhook";
-const ALERT_MANAGER = "alert-manager";
+const ALERTMANAGER = "alertmanager";
 
 // Time Constants
 const ONE_WEEK = "7 * 24 * 60 * 60 * 1000";
@@ -69,13 +69,13 @@ getAlertName = (appName, msg) => {
     let start = 0, end = 0;
 
     // Uncomment for testing
-    appName = ALERT_MANAGER;
+    appName = ALERTMANAGER;
 
     switch(appName) {
         case INCOMING_WEBHOOK:
             start = msg.search(/alerting/i) + 8;
             break;
-        case ALERT_MANAGER:
+        case ALERTMANAGER:
             start = msg.search(/firing/i) + 6;
             break;
         default:
