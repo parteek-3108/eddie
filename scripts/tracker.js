@@ -1,6 +1,6 @@
 // Supported Apps
 const INCOMING_WEBHOOK = "incoming-webhook";
-const ALERTMANAGER = "alertmanager";
+const ALERT_MANAGER = "alert-manager";
 
 // Time Constants
 const ONE_WEEK = "7 * 24 * 60 * 60 * 1000";
@@ -69,13 +69,13 @@ getAlertName = (appName, msg) => {
     let start = 0, end = 0;
 
     // Uncomment for testing
-    appName = ALERTMANAGER;
+    appName = ALERT_MANAGER;
 
     switch(appName) {
         case INCOMING_WEBHOOK:
             start = msg.search(/alerting/i) + 8;
             break;
-        case ALERTMANAGER:
+        case ALERT_MANAGER:
             start = msg.search(/firing/i) + 6;
             break;
         default:
@@ -121,7 +121,8 @@ increment = (robot, alertName, msg) => {
         robot.brain.data[channel].current = {};
     }
     
-    let count = robot.brain.data[channel].current[alertName] === undefined ? 0 : robot.brain.data[channel].current[alertName];
+    let count = robot.brain.data[channel].current[m
+                                                  Name] === undefined ? 0 : robot.brain.data[channel].current[alertName];
     robot.brain.data[channel].current[alertName] = count + 1;
 };
 
