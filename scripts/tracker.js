@@ -121,8 +121,7 @@ increment = (robot, alertName, msg) => {
         robot.brain.data[channel].current = {};
     }
     
-    let count = robot.brain.data[channel].current[m
-                                                  Name] === undefined ? 0 : robot.brain.data[channel].current[alertName];
+    let count = robot.brain.data[channel].current[alertName] === undefined ? 0 : robot.brain.data[channel].current[alertName];
     robot.brain.data[channel].current[alertName] = count + 1;
 };
 
