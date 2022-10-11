@@ -46,7 +46,7 @@ module.exports = (robot) ->
                   for row in response.feed.entry
                         checkRoaster(row)
                   if today is true
-                        res.send "First half (10:00 AM - 3:00 PM) will be handled by @#{first_half_person}, Second half (3:00 PM - 8:00 PM) will be handled by @#{second_half_person}."
+                        res.send "First half (10am-3pm) will be handled by @#{first_half_person}, Second half (3pm-8pm) will be handled by @#{second_half_person}."
                   else
                         res.send "Support Team is covering for everyone today. Cheers to them!!"
             else
