@@ -1,6 +1,6 @@
 // Supported Apps
 const INCOMING_WEBHOOK = "incoming-webhook";
-const ALERTMANAGER = "alertmanager";
+const ALERT_MANAGER = "alert-manager";
 
 // Time Constants
 const ONE_WEEK = "7 * 24 * 60 * 60 * 1000";
